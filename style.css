@@ -1,0 +1,507 @@
+/* Global Styles  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Section Start */
+.main-header {
+    background-color: #343a40;
+}
+
+/*  Navbar  */
+.navbar {
+    padding: 18px 0;
+    background-color: rgba(33, 37, 41, 0.96);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 0.3px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #f4623a;
+}
+
+.navbar-nav {
+    gap: 15px;
+}
+
+.navbar .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #f4623a;
+}
+
+/*  Banner  */
+.banner {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    background-image:
+        linear-gradient(rgba(30, 25, 25, 0.72), rgba(30, 25, 25, 0.72)),
+        url("./assets/img/hero-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 90px 15px;
+}
+
+.banner-title {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+.banner-divider {
+    width: 65px;
+    height: 4px;
+    margin: 28px auto;
+    border: 0;
+    background-color: #f4623a;
+    opacity: 1;
+    border-radius: 5px;
+}
+
+.banner-description {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.banner-btn {
+    padding: 15px 30px;
+    border: 2px solid #f4623a;
+    border-radius: 50px;
+    background-color: #f4623a;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.banner-btn:hover {
+    background-color: #d94d28;
+    border-color: #d94d28;
+    color: #fff;
+    transform: translateY(-2px);
+}
+/* Header Section End */
+
+/* Get Start section start */
+.get-start {
+    background-color: #f4623a;
+}
+.get-start-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 90px 15px;
+    color: #fff;
+}
+.get-started-btn {
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.get-started-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+.get-started-divider {
+    width: 65px;
+    height: 4px;
+    margin: 28px auto;
+    border: 0;
+    background-color: #fff;
+    opacity: 1;
+    border-radius: 5px;
+}
+/* Get Start section end */
+
+/* Service section Start */
+.service {
+    background-color: #fff;
+    padding: 90px 0;
+}
+
+.service-content {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.service-title {
+    margin-bottom: 0;
+    color: #212529;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.service-divider {
+    width: 65px;
+    height: 4px;
+    margin: 25px auto 55px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #f4623a;
+    opacity: 1;
+}
+
+/* Services Grid */
+.service-materials {
+    row-gap: 35px;
+}
+
+/* Individual Service */
+.service-material {
+    height: 100%;
+    padding: 20px 15px;
+    border-radius: 12px;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Icon */
+.icon-theme {
+    display: inline-block;
+    margin-bottom: 22px;
+    color: #f4623a;
+    font-size: 3rem;
+    transition: transform 0.3s ease;
+}
+
+/* Heading */
+.service-material h5 {
+    margin-bottom: 12px;
+    color: #212529;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+/* Description */
+.service-material p {
+    margin-bottom: 0;
+    color: #6c757d;
+    font-size: 0.98rem;
+    line-height: 1.7;
+}
+
+/* Hover Effect */
+.service-material:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+.service-material:hover .icon-theme {
+    transform: scale(1.1);
+}
+
+/* Service section End */
+
+/* Show photo start */
+
+.show-photo {
+    margin: 0;
+    padding: 0;
+}
+
+.photos {
+    margin: 0;
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.photo img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+
+/* Orange overlay */
+.photo-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(244, 98, 58, 0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* Project text */
+.photo-overlay span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    transform: translateY(10px);
+    transition: transform 0.4s ease;
+}
+
+/* Hover effect */
+.photo:hover .photo-overlay {
+    opacity: 1;
+}
+
+.photo:hover .photo-overlay span {
+    transform: translateY(0);
+}
+/* Show photo end */
+
+/* Download section start */
+.download {
+    background-color: #212529;
+    color: #fff;
+}
+/* Download section end */
+
+/* form start */
+.contact-form {
+    background-color: #fff;
+}
+
+.contact-form .form-control {
+    border-radius: 7px;
+    padding: 16px 12px;
+    font-size: 17px;
+    box-shadow: none;
+}
+
+.contact-form input {
+    height: 58px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .form-control:focus {
+    border-color: #f4623a;
+    box-shadow: 0 0 0 3px rgba(244, 98, 58, 0.12);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 17px;
+    border: none;
+    border-radius: 35px;
+    background-color: #f9957d;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #f4623a;
+}
+/* form end */
+
+/* footer start */
+footer {
+    background-color: #f8f9fa;
+}
+
+.footer-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* footer end */
+
+/* ===== Responsive Design ===== */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        gap: 5px;
+        padding-top: 15px;
+    }
+
+    .navbar .nav-link {
+        padding: 10px 0;
+    }
+
+    .banner {
+        min-height: 580px;
+    }
+
+    .banner-content {
+        padding: 75px 20px;
+    }
+    .get-start {
+        padding: 75px 25px;
+    }
+
+    .get-start-content p {
+        font-size: 1rem;
+    }
+
+    .service {
+        padding: 75px 0;
+    }
+
+    .service-divider {
+        margin-bottom: 40px;
+    }
+
+    .service-material {
+        padding: 20px 12px;
+    }
+
+    .icon-theme {
+        font-size: 2.7rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .banner {
+        min-height: 540px;
+    }
+
+    .banner-content {
+        padding: 60px 15px;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+        letter-spacing: -0.4px;
+    }
+
+    .banner-divider {
+        margin: 22px auto;
+    }
+
+    .banner-description {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .banner-btn {
+        padding: 13px 24px;
+        font-size: 0.8rem;
+    }
+    .get-start {
+        padding: 60px 20px;
+    }
+
+    .get-start-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .get-started-divider {
+        margin: 20px auto;
+    }
+
+    .get-start-content p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+
+    .get-started-btn {
+        padding: 13px 25px;
+        font-size: 0.85rem;
+    }
+    .service {
+        padding: 60px 0;
+    }
+
+    .service-content {
+        padding: 0 20px;
+    }
+
+    .service-divider {
+        margin: 20px auto 30px;
+    }
+
+    .service-materials {
+        row-gap: 20px;
+    }
+
+    .service-material {
+        padding: 22px 15px;
+    }
+
+    .icon-theme {
+        margin-bottom: 15px;
+        font-size: 2.5rem;
+    }
+
+    .service-material h5 {
+        font-size: 1.15rem;
+    }
+
+    .service-material p {
+        font-size: 0.95rem;
+    }
+    /* form */
+    .contact-form .form-control {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .contact-form input {
+        height: 52px;
+    }
+}
